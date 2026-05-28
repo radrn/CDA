@@ -2,8 +2,8 @@ import {ProduitFerme} from "./ProduitFerme";
 
 export class Vache extends ProduitFerme {
 
-    constructor(name: string, energy: number, max: number, used: number, prod: number) {
-        super(name, energy, max, used, prod);
+    constructor(name: string) {
+        super(name);
         this._name = name;
         this._energy = 100;
         this._energyMax = 100;

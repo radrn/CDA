@@ -1,4 +1,4 @@
-export class ProduitFerme {
+export abstract class ProduitFerme {
     protected _name: string;
     protected _energy: number;
     protected _energyMax: number;
@@ -7,15 +7,15 @@ export class ProduitFerme {
 
 
 
-    constructor(name: string, energy: number, max: number, used: number, prod: number) {
+    constructor(name: string) {
         this._name = name;
-        this._energy = energy;
-        this._energyMax = max;
-        this._energyUsed = used;
-        this._productionParTour = prod;
+        this._energy = 0;
+        this._energyMax = 0;
+        this._energyUsed = 0;
+        this._productionParTour = 0;
     }
 
-    produire():number {
+    produire():void {
         if(this._energy > 0){
             this._energy = this._energyMax - this._energyUsed;
             console.log(this._name + ' produit ' + this._productionParTour + ' unités, il lui reste ' + this._energy + '/' + this._energy + ' energie');

@@ -2,8 +2,8 @@ import {ProduitFerme} from "./ProduitFerme";
 
 export class Mouton extends ProduitFerme{
 
-    constructor(name: string, energy: number, max: number, used: number, prod: number) {
-        super(name, energy, max, used, prod);
+    constructor(name: string) {
+        super(name);
         this._name = name;
         this._energy = 90;
         this._energyMax = 90;

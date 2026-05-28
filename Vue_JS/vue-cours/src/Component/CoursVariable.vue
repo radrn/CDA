@@ -11,6 +11,8 @@
     <li v-for="(item, index) in arrayNames" :key="index">{{item}}</li>
   </ul>
 
+  <input v-model="inputText">
+  <p>{{inputText}}</p>
 </template>
 
 <script>
@@ -23,7 +25,8 @@ export default {
       age: 15,
       arrayNames: [
         "Toto", "Tata", "Titi"
-      ]
+      ],
+      inputText: ""
     }
   },
   methods: {

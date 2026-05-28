@@ -12,7 +12,7 @@ export class Ferme{
         for (let i:number = 0; i <= 10 ; i++){
             let random = Math.floor(Math.random() * (5-1) + 1);
             if (random === 1){
-                let vache: Vache = new Vache();
+                let vache: Vache = new Vache(0);
                 this._objects.push(vache);
             } else if (random === 2){
                 let poulet: Poulet = new Poulet();

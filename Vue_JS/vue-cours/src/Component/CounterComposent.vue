@@ -37,9 +37,6 @@ export default {
 </script>
 
 <style scoped>
-  .zero {
-    color: black
-  }
   .positive {
     color : green;
   }
